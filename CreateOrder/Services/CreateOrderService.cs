@@ -1,7 +1,9 @@
-﻿using MassTransit;
+﻿using CreateOrder.Interfaces;
+using MassTransit;
 using ReceiveOrder;
+using ReceiveOrder.Contracts;
 
-namespace CreateOrder;
+namespace CreateOrder.Services;
 
 public class CreateOrderService : ICreateOrderService
 {
@@ -11,9 +13,9 @@ public class CreateOrderService : ICreateOrderService
     {
         _bus = bus;
     }
-    public async Task CreateOrder(Order order)
+    public async Task CreateOrder(NewOrderReceived newOrderReceived)
     {
-        var orderCreated = new NewOrderCreated
+        var orderCreated = new OrderCreated
         {
             Id = Guid.NewGuid().ToString(),
             Date = DateTime.Now

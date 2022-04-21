@@ -1,5 +1,7 @@
-using Microsoft.AspNetCore.Mvc;
 using MassTransit;
+using Microsoft.AspNetCore.Mvc;
+using ReceiveOrder.Contracts;
+using ReceiveOrder.Interfaces;
 
 namespace ReceiveOrder.Controllers
 {
@@ -8,48 +10,20 @@ namespace ReceiveOrder.Controllers
     public class OrderController : ControllerBase, IOrderController
     {
         private readonly IBus _bus;
-
         public OrderController(IBus bus)
         {
             _bus = bus;
         }
         
-        // GET: api/Order
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET: api/Order/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST: api/Order
         [HttpPost]
-        public async Task Post([FromBody] Order newOrder)
+        public async Task Post([FromBody] NewOrderReceived newNewOrderReceived)
         {
-            Console.WriteLine($"Order received {newOrder.Date} | {newOrder.LotNumber}");
-            await _bus.Publish(new Order
+            Console.WriteLine($"Order received {newNewOrderReceived.Date} | {newNewOrderReceived.LotNumber}");
+            await _bus.Publish(new NewOrderReceived
             {
                 Date = DateTime.Now,
-                LotNumber = newOrder.LotNumber
+                LotNumber = newNewOrderReceived.LotNumber
             });
-        }
-
-        // PUT: api/Order/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE: api/Order/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

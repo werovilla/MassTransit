@@ -1,6 +1,7 @@
-﻿namespace MTHost;
+﻿using MassTransit;
 
-using MassTransit;
+namespace MTHost.Services;
+
 public class MassTransitService : IHostedService
 {
     readonly IBusControl _bus;

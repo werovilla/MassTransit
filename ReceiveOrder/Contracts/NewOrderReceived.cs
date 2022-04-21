@@ -1,6 +1,6 @@
-namespace ReceiveOrder;
+namespace ReceiveOrder.Contracts;
 
-public record Order
+public record NewOrderReceived
 {
     public DateTime Date { get; init; }
     public string? LotNumber { get; init; }

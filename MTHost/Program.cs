@@ -2,12 +2,16 @@ using System.Configuration;
 using System.Reflection;
 using CreateOrder;
 using CreateOrder.Consumers;
+using CreateOrder.Interfaces;
+using CreateOrder.Services;
 using MassTransit;
 using Microsoft.CodeAnalysis.FlowAnalysis;
-using ReceiveOrder.Controllers;
 using MTHost;
 using MTHost.Configurations;
+using MTHost.Services;
 using ReceiveOrder.Consumers;
+using ReceiveOrder.Controllers;
+using ReceiveOrder.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,8 +34,8 @@ builder.Host.ConfigureServices((hostContext, services) =>
         x.SetInMemorySagaRepositoryProvider();
 
         var entryAssembly = Assembly.GetEntryAssembly();
-        x.AddConsumer(typeof(NewOrderConsumer));
-        x.AddConsumer(typeof(NewOrderCreatedConsumer));
+        x.AddConsumer(typeof(CreateOrderConsumer));
+        x.AddConsumer(typeof(OrderCreatedConsumer));
         x.AddSagaStateMachines(entryAssembly);
         x.AddSagas(entryAssembly);
         x.AddActivities(entryAssembly);
