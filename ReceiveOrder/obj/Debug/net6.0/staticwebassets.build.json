@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "p4hpebybsrPGPd4bUTYx+yrNaVjj3Mi7JqLsWFHKAuU=",
+  "Source": "ReceiveOrder",
+  "BasePath": "_content/ReceiveOrder",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

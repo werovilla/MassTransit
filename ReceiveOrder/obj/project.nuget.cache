@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "1+TUVBoVn+S/1sGk+Ne2RQVtU9K4jGTUt57seU92uw4RET+nVzi1ef6IL3lA7L3d+yCWI7zht0gH3FyVXwURAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hector.roman\\RiderProjects\\MassTransit\\ReceiveOrder\\ReceiveOrder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hector.roman\\.nuget\\packages\\masstransit.abstractions\\8.0.1\\masstransit.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\hector.roman\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\hector.roman\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\hector.roman\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\hector.roman\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\hector.roman\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\hector.roman\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "ZSB7ASKgZSXimsek0egSVILESzYFHuRULhuoAIDl8b4=",
+  "Source": "CreateOrder",
+  "BasePath": "_content/CreateOrder",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\hector.roman\\RiderProjects\\MassTransit\\ReceiveOrder\\ReceiveOrder.csproj",
+      "Version": 2,
+      "Source": "ReceiveOrder",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
