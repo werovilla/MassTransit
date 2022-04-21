@@ -1,4 +1,6 @@
-﻿namespace MTHost.Configurations;
+﻿//Configuration file used to setup Azure EventBUS
+
+namespace MTHost.Configurations;
 
 public record AzureConfig(IConfiguration configuration)
 {

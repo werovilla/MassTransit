@@ -17,10 +17,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Contracts" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\CreateOrder\CreateOrder.csproj" />
       <ProjectReference Include="..\ReceiveOrder\ReceiveOrder.csproj" />
     </ItemGroup>

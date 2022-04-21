@@ -1,3 +1,5 @@
+//This class injects IBus in order to be able to publish the Order along with its attributes
+
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using ReceiveOrder.Contracts;
@@ -19,11 +21,7 @@ namespace ReceiveOrder.Controllers
         public async Task Post([FromBody] NewOrderReceived newNewOrderReceived)
         {
             Console.WriteLine($"Order received {newNewOrderReceived.Date} | {newNewOrderReceived.LotNumber}");
-            await _bus.Publish(new NewOrderReceived
-            {
-                Date = DateTime.Now,
-                LotNumber = newNewOrderReceived.LotNumber
-            });
+            await _bus.Publish(newNewOrderReceived);
         }
     }
 }

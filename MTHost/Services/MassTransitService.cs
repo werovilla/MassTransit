@@ -1,4 +1,6 @@
-﻿using MassTransit;
+﻿//This service class is the EventBUS Hosted Service which is used to Start/Stop the EventBUS Service
+
+using MassTransit;
 
 namespace MTHost.Services;
 

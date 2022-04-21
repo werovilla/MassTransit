@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "XLlfxbdmv5EHDAsFvRLMfFmAqQb4jJMDIq1Vm1dsse8=",
+  "Hash": "OB69eR8Oy6n1mBSO8EtUM/q5nMorVYMNYvI0V3uCcx0=",
   "Source": "MTHost",
   "BasePath": "_content/MTHost",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\hector.roman\\RiderProjects\\MassTransit\\CreateOrder\\CreateOrder.csproj",
+      "Identity": "C:\\Users\\roberto.lopez\\source\\repos\\MassTransit\\CreateOrder\\CreateOrder.csproj",
       "Version": 2,
       "Source": "CreateOrder",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -18,7 +18,7 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
     },
     {
-      "Identity": "C:\\Users\\hector.roman\\RiderProjects\\MassTransit\\ReceiveOrder\\ReceiveOrder.csproj",
+      "Identity": "C:\\Users\\roberto.lopez\\source\\repos\\MassTransit\\ReceiveOrder\\ReceiveOrder.csproj",
       "Version": 2,
       "Source": "ReceiveOrder",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

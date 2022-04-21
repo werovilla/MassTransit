@@ -1,4 +1,6 @@
-﻿using CreateOrder.Interfaces;
+﻿//This class is in charge of consuming the events/messages of the NewOrderReceived.cs class
+
+using CreateOrder.Interfaces;
 using MassTransit;
 using ReceiveOrder;
 using ReceiveOrder.Contracts;

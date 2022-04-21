@@ -1,4 +1,6 @@
-﻿using CreateOrder.Interfaces;
+﻿//This class contains the logic used to create the order.
+
+using CreateOrder.Interfaces;
 using MassTransit;
 using ReceiveOrder;
 using ReceiveOrder.Contracts;

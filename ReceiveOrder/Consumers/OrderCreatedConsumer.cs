@@ -1,4 +1,6 @@
-﻿using MassTransit;
+﻿//This class implements the IConsumer that comes from the MassTransit NugetPackage which shows the Order ID# created by CreateOrderConsumer.cs
+
+using MassTransit;
 using ReceiveOrder.Contracts;
 
 namespace ReceiveOrder.Consumers;

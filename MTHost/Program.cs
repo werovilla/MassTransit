@@ -39,7 +39,9 @@ builder.Host.ConfigureServices((hostContext, services) =>
         x.AddSagaStateMachines(entryAssembly);
         x.AddSagas(entryAssembly);
         x.AddActivities(entryAssembly);
-
+        
+        /*This switch statement shows the type of MassTransit that can be configured in appsettings.Development.json
+          e.g.: "MassTransitBus": "InMemory" | "MassTransitBus": "RabbitMQ" | "MassTransitBus": "Azure"  | "MassTransitBus": "Azure"*/
         switch (hostContext.Configuration.GetValue<string>("MassTransitBus"))
         {
             case "InMemory":

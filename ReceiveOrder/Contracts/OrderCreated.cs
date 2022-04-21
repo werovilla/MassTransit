@@ -1,4 +1,6 @@
-﻿namespace ReceiveOrder.Contracts;
+﻿//This record assigns the Date and ID to the order created by OrderCreatedConsumer.cs
+
+namespace ReceiveOrder.Contracts;
 
 public record OrderCreated
 {

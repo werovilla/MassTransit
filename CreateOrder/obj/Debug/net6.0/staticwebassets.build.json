@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "ZSB7ASKgZSXimsek0egSVILESzYFHuRULhuoAIDl8b4=",
+  "Hash": "1dLKyfMqN9c+19SQR9Z7olfNmMVCMiqUABvF9UafJvY=",
   "Source": "CreateOrder",
   "BasePath": "_content/CreateOrder",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\hector.roman\\RiderProjects\\MassTransit\\ReceiveOrder\\ReceiveOrder.csproj",
+      "Identity": "C:\\Users\\roberto.lopez\\source\\repos\\MassTransit\\ReceiveOrder\\ReceiveOrder.csproj",
       "Version": 2,
       "Source": "ReceiveOrder",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

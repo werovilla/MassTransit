@@ -1,4 +1,6 @@
-﻿namespace MTHost.Configurations;
+﻿//Configuration file used to setup RabbitMQ EventBUS
+
+namespace MTHost.Configurations;
 
 public record RabbitMQConfig(IConfiguration configuration)
 {
