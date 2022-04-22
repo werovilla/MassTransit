@@ -1,14 +1,9 @@
-using System.Configuration;
 using System.Reflection;
-using CreateOrder;
 using CreateOrder.Consumers;
 using CreateOrder.Interfaces;
 using CreateOrder.Services;
 using MassTransit;
-using Microsoft.CodeAnalysis.FlowAnalysis;
-using MTHost;
 using MTHost.Configurations;
-using MTHost.Services;
 using ReceiveOrder.Consumers;
 using ReceiveOrder.Controllers;
 using ReceiveOrder.Interfaces;
@@ -22,7 +17,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddHostedService<MassTransitService>();
 builder.Services.AddSingleton<IOrderController, OrderController>();
 builder.Services.AddSingleton<ICreateOrderService, CreateOrderService>();
 
@@ -108,9 +102,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
